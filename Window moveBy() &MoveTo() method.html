@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>moveBy() and moveTo()</title>
+<body>
+    <button onclick="openWindow()">Open Window</button>
+    <button onclick="moveWindow()">Move Window</button>
+</body>
+<script>
+                                                                 // moveTo() method
+    var myWindow;
+    function  openWindow(){
+    //    myWindow = window.open("http://www.yahoobaba.net","","width=500px,height=500px");                     //old line
+       myWindow = window.open("","","width=500px,height=500px,left=100px,top=100px");
+    //    myWindow = window.open("","","width=500px,height=500px");
+       myWindow.document.write("<p>This is my window</P>");
+    }
+
+    function moveWindow(){
+        // myWindow.moveTo(100,100);
+        myWindow.moveTo(200,200);
+                                                                //moveBy() method
+      /*  // myWindow.moveBy(200,200);
+        myWindow.moveBy(300,300);  */
+
+        myWindow.focus();
+    } 
+</script>
+</html>
