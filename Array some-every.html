@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array some-every</title>
+</head>
+<body>
+    <script>
+        // some() any value check condition follow is true
+
+        const ages= [12,25,14,20];
+        // const ages= [12,15,10,8];
+        document.write(ages,"<br>");
+        var b= ages.some(checkadult);
+        document.write(b);
+
+        function checkadult(age){
+            // return age<=18;
+            return age>=18;
+        }
+
+        // every()  all value check condition  follow is true
+        
+     /*   const ages= [27,35,54,90];
+        // const ages= [17,15,11,8];
+        document.write(ages,"<br>");
+        var b= ages.every(checkadult);
+        document.write(b);
+
+        function checkadult(age){
+            return age>=18;  
+        // return ages<=18;
+        } */
+        
+    </script>
+</body>
+</html>

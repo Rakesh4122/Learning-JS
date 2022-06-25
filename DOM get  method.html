@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM get methods</title>
+</head>
+<body>
+    <!-- <p id="demo">Hello World!</p> -->
+    <p id="demo" class="list" style="border: 2px solid red;" onClick="xyz()"> 
+        <span>India</span> 
+        <span>Rakesh</span>
+    </p>
+    <ul id="list"> 
+        <li>B.Sc</li>
+        <li>12<sup>th</sup></li>
+        <li>10<sup>th</sup></li>
+        <li>5<sup>th</sup></li>
+        <li>4<sup>th</sup></li>
+        <li>2<sup>nd</sup></li>
+        <li>1<sup>st</sup></li>
+    </ul>
+    <script>
+        var element;
+    //   element = document.getElementById("list").innerText;
+    //   element = document.getElementById("demo").innerText;
+    //    element = document.getElementById("demo").innerHTML;
+    //    element = document.getElementById("list").innerHTML;
+    //    element = document.getElementById("demo").getAttribute("class");
+    //    element = document.getElementById("demo").getAttribute("style");
+    //    element = document.getElementById("demo").getAttribute("onClick");
+    //    element = document.getElementById("demo").getAttributeNode("class");
+    //    element = document.getElementById("demo").getAttributeNode("style");
+    //    element = document.getElementById("demo").getAttributeNode("id");
+    //    element = document.getElementById("demo").getAttributeNode("onClick").value;
+    //    element = document.getElementById("demo").getAttributeNode("style").value;
+    //    element = document.getElementById("demo").attributes;
+    //    element = document.getElementById("demo").attributes[1];
+        //  element = document.getElementById("demo").attributes[3];
+    //    element = document.getElementById("demo").attributes[2].value;
+    //    element = document.getElementById("demo").attributes[0].value;
+    //    element = document.getElementById("demo").attributes[1].name;
+         element = document.getElementById("demo").attributes[3].name;
+        console.log(element);
+    </script>
+</body>
+</html>

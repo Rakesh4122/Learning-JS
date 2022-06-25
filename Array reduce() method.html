@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array reduce method</title>
+</head>
+<body><script>
+        const num=[45,6,4,24,30];
+        document.write(num,"<br>");
+        const sum=num.reduce(myFunction);
+        // const sum=num.reduce(myFunction,50);
+        document.write("The sum is : ", sum);
+        function myFunction(total,value){
+            return total + value;
+        }
+    </script>
+</body>
+</html>

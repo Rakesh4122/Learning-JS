@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Create & Append methods</title>
+    <style>
+        #test{
+            height: 350px;
+            width: 800px;
+            background-color: rgb(201, 172, 134);
+            border: 2px solid black;
+        
+        }
+    </style>
+</head>
+
+<body>
+        <div id="test">
+           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Et fugiat qui neque aut quisquam reprehenderit
+            sapiente iure laborum sint ducimus, nobis aliquid, praesentium magnam corrupti aperiam molestias corporis.
+            Delectus ex minus provident voluptates unde itaque fugiat possimus asperiores, nemo quo perferendis
+            accusantium recusandae voluptatem eligendi repellendus velit numquam sapiente hic.</p>
+        </div>
+    <script>
+                                                                                // insertAdjacentElement
+
+         /*  var newElement = document.createElement("h2");
+
+            var newText = document.createTextNode("This is just text.");
+
+            newElement.appendChild(newText);
+
+            var target = document.getElementById("test");
+
+            target.insertAdjacentElement("beforebegin",newElement);
+            // target.insertAdjacentElement("afterbegin",newElement);
+            // target.insertAdjacentElement("beforeend",newElement);
+            // target.insertAdjacentElement("afterend",newElement); */
+
+                                                                                 // insertAdjacentHTML
+
+         /*   var target = document.getElementById("test");
+
+            var newElement = "<h2>This is heading </h2>";
+
+            // target.insertAdjacentHTML("beforebegin",newElement);
+            target.insertAdjacentHTML("afterbegin",newElement);
+            // target.insertAdjacentHTML("beforeend",newElement);
+            // target.insertAdjacentHTML("afterend",newElement);  */
+
+                                                                                 // insertAdjacentText
+
+            var target = document.getElementById("test");
+
+            var newText = "This is heading.";
+
+            // target.insertAdjacentText("beforebegin",newText);                                                                    
+            // target.insertAdjacentText("afterbegin",newText);                                                                    
+            // target.insertAdjacentText("beforeend",newText);                                                                    
+            target.insertAdjacentText("afterend",newText);                                                                    
+    </script>
+</body>
+
+</html>

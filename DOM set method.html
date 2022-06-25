@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM set method</title>
+</head>
+<body>
+    <div id="demo" class="list" style="border: 8px solid red;" onClick="xyz()">
+        <h1>Hello World!</h1>
+    </div>
+    <script>
+        var element;
+        // set innerText and innerHTML
+
+     /*  element = document.getElementById("demo").innerHTML;
+        console.log(element);
+
+        // document.getElementById("demo").innerHTML = "<h1>Wow</h1>";
+        // document.getElementById("demo").innerText = "Wow Universe!";
+        document.getElementById("demo").innerHTML = "<h3>Wow Universe!</h3>";
+        element = document.getElementById("demo").innerHTML;  */
+
+        // setAttribute  and attributes1
+
+        document.getElementById("demo").innerHTML = "<h3>Wow Universe!</h3>";
+     /*   document.getElementById("demo").setAttribute("class","abc");
+        element = document.getElementById("demo").getAttribute("class");  */
+
+     /*  document.getElementById("demo").setAttribute("style" , "border: 10px dotted blue");
+        element = document.getElementById("demo").getAttribute("style");  */
+        
+      /* document.getElementById("demo").attributes[1].value = "abc";
+        element = document.getElementById("demo").getAttribute("class"); */
+
+       /* document.getElementById("demo").attributes[3].value = "loop";
+        element = document.getElementById("demo").getAttribute("onclick");  */
+
+        document.getElementById("demo").removeAttribute("style");  
+        console.log(element);
+    </script>
+</body>
+</html>

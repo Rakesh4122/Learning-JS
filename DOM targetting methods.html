@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Third Website</title>
+	<style type="text/css">
+		.dv1 {
+			border: 2px solid black;
+			background-color: hotpink;
+			height: 80px;
+			width: 100%;
+			font-weight: bold;
+			font-size: 30px;
+			padding-top: 40px;
+		}
+
+		.mad span {
+			border: 2px solid black;
+			background-color: blueviolet;
+			margin-left: 60px;
+			border-radius: 20px;
+			padding: 6px;
+
+		}
+
+		table, th,td{
+			border: 2px solid black;
+			height: 100px;
+			width: 100.2%;
+			background-color: blue;
+			border-collapse: collapse;
+			padding: 40px;
+			padding-right: 250px;
+			font-weight: bold;
+			font-size: 20px;
+			text-align: center;
+			color: white;
+		}
+
+		.wd {
+			border: 2px solid black;
+			background-color: red;
+			height: 100px;
+			width: 100%;
+			text-align: center;
+			font-weight: bold;
+			font-size: 70px;
+			padding-top: 20px;
+			color: hotpink;
+			color: white;
+		}
+
+		.raj {
+			border: 2px solid black;
+			background-color: seagreen;
+			height: 100px;
+			width: 100%;
+			font-weight: bold;
+			font-size: 40px;
+			padding-top: 40px;
+		}
+
+		a {
+			border: 2px solid white;
+			background-color: yellow;
+			margin-left: 20px;
+			margin-right: 20px;
+			padding: 6pxpx;
+		}
+
+		p {
+			border: 2px solid black;
+			background-color: grey;
+			height: 100px;
+			width: 100%;
+			text-align: center;
+			font-weight: bold;
+			font-size: 60px;
+			padding-top: 20px;
+			color: white;
+			margin: 0px;
+		}	
+	</style>
+<body>
+	<header class="dv1">
+		<div class="mad">
+			<span>Home</span>
+			<span style="margin-left: 600px;">My Third Website</span>
+			<span style="float:right; margin-right:60px;">Exit</span>
+		</div>
+	</header>
+	<table id="demo" class="lists">
+		<tr>
+			<th>About</th>
+			<th>Moral</th>
+			<th>Education</th>
+		</tr>	
+			<td>I am a student. I am Graduate Boy.</td>
+			<td>Life is about to die.We believe... We can... </td>
+			<td>
+				<ul class="list">
+					<li>B.Sc</li>
+					<li>12<sup>th</sup></li>
+					<li>10<sup>th</sup></li>
+					<li>5<sup>th</sup></li>
+					<li>4<sup>th</sup></li>
+					<li>2<sup>nd</sup></li>
+					<li>1<sup>st</sup></li>
+				</ul>
+			</td>
+		</tr>
+	</table>
+	<p class="wd">My Website</p>
+	<footer class="raj">
+		<a href="Image Insert.html">Khulikitab.Com</a>
+		<a href="Audio.html" style="float: right;">Khulikitab.Com Audio</a>
+	</footer>
+	<p id="demo">Thanks For Visit.</p>
+	<p class="list">Thanks For Visit.</p>
+   
+	<script>
+		// DOM targetting methods
+
+		var element;
+		// element = document;
+		// element = document.all;
+		// element = document.documentElement;
+		// element = document.head;
+		// element = document.title;
+		// element = document.body;
+		// element = document.images;
+		// element = document.anchors;
+		// element = document.links;
+		// element = document.links[0];
+		// element = document.links[1];
+		// element = document.forms;
+		// element = document.doctype;
+		// element = document.URL;
+		// element = document.baseURI;
+		// element = document.domain;
+		// element = document.getElementById("demo");
+		// element = document.getElementById("lists");
+
+		// element = document.getElementsByClassName("list");
+		element = document.getElementsByClassName("list")[0];
+		// element = document.getElementsByClassName("list")[1];
+		// element = document.getElementsByTagName("tr")[0];   
+		// element = document.getElementsByTagName("tr")[1];   
+		// element = document.getElementsByTagName("p"); 
+		// element = document.getElementsByTagName("p")[2];   
+		// element = document.getElementsByTagName("li");
+		console.log(element);
+	</script>
+</body>
+
+</html>

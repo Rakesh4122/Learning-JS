@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Array</title>
+</head>
+
+<body>
+    <script>
+        const cars = ["saab", "volvo", "BMW"];
+        // document.write(cars);
+        // document.write(cars.length);
+        /*   for(a=0; a<=2;a++){
+           document.write(cars[a],"<br>");
+           } */
+
+        /*    cars.forEach(loop);
+            function loop(value,index){
+                document.write(index, " : ", value,"<br>");
+             } */                                             /*  print value & index first method */
+
+
+        /* cars.forEach(function(value, index){
+               document.write(index, " : ", value,"<br>");
+        }); */                                             /* print value & index second method */
+
+        var arr = new Array(3);
+     /* arr[0] = 10;
+        arr[2] = "Harry";
+        arr[3] = 30;
+        arr[4] = "Tom"; 
+        for (a = 0; a < 5; a++) {
+            document.write(arr[a],"<br>");
+        }    */
+    
+        for(g=0; g<3; g++){
+        arr[g]=prompt("Enter the value");
+        document.write(arr[g],"<br>");
+    }
+  
+
+    /*  let ary=["Rakesh","Raj",23,"Nitesh", 50];
+        ary[0]= "Singh";
+        ary[1]= 'Manish';
+        ary[3]= 36;
+        document.write(ary); */
+
+
+        var arr = [
+            ["Rakesh", 24, "Male", "B.C.A.",20],
+            ["Nitesh", 23, "Male", "B.Sc.","Varanasi"],
+            ["Chandan", 25, "Male", "M.C.A." ,34],
+            ["Sara", 19, "Female", "B.Com"],
+            ["Mac", 19, "Female", "B.Com"]
+        ];
+        // document.write(arr[2][1]);
+        // document.write(arr.length);
+        document.write("<table border = '1px' cellspacing='0'>");
+        for (a = 0; a < arr.length; a++) {
+            document.write("<tr>");
+            for (b = 0; b < arr[a].length; b++) {
+                document.write("<td>", arr[a][b], "</td>");
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>");
+
+    </script>
+</body>
+
+</html>
+        
+

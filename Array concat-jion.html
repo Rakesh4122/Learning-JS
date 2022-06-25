@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array concat-jion</title>
+</head>
+<body>
+    <script>
+      // concat()  first method
+
+      /*  var a = ["Sanjay","Aman","Rakesh"];
+        document.write(a,'<br>');
+        var b = a.concat("Karan","Rahul");
+        document.write(b);  */
+
+        // concat() second method
+         var a = ["Sanjay","Aman","Rakesh"];
+         document.write(a,'<br>');
+          var b = ["Karan","Rahul"];
+          // var d = ["Mahima","Dipak"];
+        //   var c = a.concat(b,d);
+          var c = a.concat(b);
+          document.write(c, "<br>");  
+
+        // join() method
+
+        var a = ["Sanjay","Aman","Rakesh"];
+        document.write(a,'<br>');
+        var b = ["Vikas","manish"];
+        var c= a.concat(b);
+        document.write(c,"<br>");
+        // var d= c.join(" / ");
+        // var d= c.join(" % ");
+        // var d= c.join(" & ");
+        // var d= c.join(" - ");
+        var d= c.join(" #@ ");
+        document.write(d);
+
+     /*   var num1=[20,45,36,4,53,];
+        var num2=[16,8,19];
+        var digit= num1.concat(num2);
+        document.write(digit,"<br>"); 
+        var data = digit.join(" - ");
+        document.write(data);  */
+
+     /*   var a = ["Sanjay","Aman","Rakesh","Karan"];
+        document.write(a,'<br>');
+      var b = a.join(" * ");
+      document.write(b)
+        // document.write(a.join(" * ")); */
+    </script>
+</body>
+</html>

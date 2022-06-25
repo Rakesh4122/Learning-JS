@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Key() Method</title>
+</head>
+<body>
+    <script>
+        var fruits =["Banana","Apple","Orange","Mango"];
+        document.write(fruits,"<br>");
+        var keys=fruits.keys();
+        for(let x of keys){
+            document.write(x,'<br>');
+        }
+
+        var a=[10,28,8,49,68,85];
+        document.write(a,"<br>");
+        var b=a.keys();
+        for(var num of b){
+            document.write(num,",");
+        }
+    </script>
+</body>
+</html>

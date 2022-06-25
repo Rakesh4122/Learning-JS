@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Box</title>
+</head>
+<body>
+    <button onclick="myfunction()">Try it</button>
+    <p id="demo"></p>
+    <script>
+    /*  let a =confirm("Do you like your website?");
+      if(a){
+          alert("Thanks!");
+      } 
+      else{
+          alert("Sorry!");
+      } */
+
+      function myfunction(){
+          var text;
+          if(confirm("Press a button")){
+              text="You press ok!"
+          }
+          else{
+              text="You press cancle!"
+          }
+          document.getElementById("demo").innerHTML = text;
+      }
+    </script>
+</body>
+</html>

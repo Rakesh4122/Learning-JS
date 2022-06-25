@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show/Hide</title>
+    <style>
+        #btn{
+            border: 2px solid black;
+            border-radius: 8px;
+            font-size: 18px;
+            padding: 6px 8px;
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is heading</h1>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, soluta velit? Nesciunt veritatis excepturi
+        incidunt magni, tempore doloremque. Totam quam sit molestias ea laborum quibusdam iste pariatur, perspiciatis
+        laboriosam inventore, cumque beatae ut nulla accusantium esse voluptatem illum optio sapiente nisi magni
+        blanditiis earum ullam. Quia, nobis autem harum accusantium, veritatis beatae voluptatem minus voluptatibus cum
+        reiciendis eligendi voluptates nisi eveniet incidunt voluptatum saepe quaerat, officiis minima quam dolores sed
+        fugiat porro exercitationem quo. Autem nobis cum fugiat, laborum architecto corporis voluptas iste aliquid. Ut,
+        delectus quod quasi, culpa nulla omnis magnam expedita dolor illo sit nisi sed dolore, neque praesentium
+        consectetur at enim assumenda? Ut atque nulla numquam? Molestias sequi cumque, fuga excepturi dolores obcaecati
+        iste. Atque, quidem! Commodi quod totam, porro perferendis tempore impedit sapiente dolores assumenda placeat
+        dicta iste delectus! Aspernatur officia, eius reprehenderit nisi, quae adipisci possimus pariatur ratione ipsum
+        nostrum esse expedita maxime quidem repellat sit tenetur, est accusamus. Maiores nemo voluptatum esse quibusdam.
+        Fugit explicabo minus dignissimos, in quos sunt facere? Quasi dignissimos sit illum in veniam porro culpa.
+        Exercitationem quisquam repellendus, reiciendis sapiente aperiam harum labore id nostrum magnam voluptatem
+        tenetur quis quos dolore voluptate laboriosam mollitia eligendi nesciunt? Rem modi mollitia aspernatur ipsam
+        omnis. Ipsa doloribus, in qui molestiae sint assumenda vitae sed inventore amet labore, excepturi placeat
+        dolores officia, ab quidem laudantium saepe pariatur atque veniam. Aliquam illum ab expedita cumque voluptatem
+        nisi quod non, ratione repellat aperiam libero sunt consequuntur provident esse sapiente blanditiis distinctio
+        ex officia vitae. Alias, quia.</p>
+        <button id="btn" onclick="run()">Show/Hide</button>
+
+        <script>
+         /*   var para =  document.getElementById("para");
+            para.addEventListener("mouseover", function(){
+                console.log("Mouse Inside");
+            });
+
+            para.addEventListener("mouseout", function(){
+                console.log("Mouse Outside");
+            });  */
+
+            function run(){
+             var btn = document.getElementById("btn");
+              var para =  document.getElementById("para");
+
+              if(para.style.display!= "none"){
+                para.style.display="none";
+              }
+              else{
+              para.style.display="block";
+            }
+        }
+        </script>
+</body>
+
+</html>

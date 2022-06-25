@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom contains() method</title>
+    <style>
+        #test{
+            height: 300px;
+            width: 700px;
+            background-color:bisque;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="test">
+        <h1>Yahoo Baba: JavaScript contains() method</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet magnam molestias, impedit obcaecati ipsam
+            est, libero vitae cupiditate culpa nihil corporis quo reiciendis expedita error, aperiam modi. Aspernatur,
+            minus laboriosam veritatis amet mollitia facere odio, commodi non sint eveniet, tempora quae optio
+            cupiditate reprehenderit. Iure, quidem quos! Voluptate, doloribus unde?</p>
+
+        <p id="abc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, sint sed! Accusantium quia totam quibusdam
+                praesentium quaerat reiciendis, et, dolores pariatur, omnis molestiae deleniti provident maxime ad
+                cupiditate nemo voluptate? Obcaecati neque ad fugit modi quod odio, aut nobis natus ea dignissimos
+                temporibus iste. Perferendis repudiandae natus quia sed enim!</p>
+        
+    </div>
+
+    <script>
+        var parentElement = document.getElementById("test");
+
+        var target = document.getElementById("abc");
+
+        var find = parentElement.contains(target);
+        
+        console.log(find);
+    </script>
+</body>
+
+</html>

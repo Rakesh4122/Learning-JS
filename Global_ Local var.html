@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Local Variable</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+        //  Global Variable inside&Outside the function
+     /*   var a = "Rakesh Singh";
+
+        function hello() {
+            document.write(a + "<br>");
+        }
+        hello(); */
+        
+       
+      /*  let a=6;
+        function myFunction(){
+           
+            // document.write(a*a);
+            // document.getElementById("demo").innerHTML= a * a;
+        }
+        myFunction();
+        document.write(a+a); */
+
+        //    Local Variable Inside the function
+
+        function myFunction(){
+                let a="Yahoo Baba";
+                // document.write(a);
+                document.getElementById("demo").innerHTML= a;
+            }
+           myFunction();
+     </script>
+
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array filter Method</title>
+</head>
+<body>
+    <script>
+        const ages = [10,20,8,35,60];
+        // const ages = [8,17,67,15,86,24];
+        document.write(ages,"<br>");
+        var b =ages.filter(check);
+        document.write(b);
+        function check(age){
+            return age>=18;
+            // return age<=18;
+        }
+    </script>
+</body>
+</html>

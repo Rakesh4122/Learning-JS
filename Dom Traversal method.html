@@ -1,0 +1,155 @@
+<html id="main">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom traversal method</title>
+    <style>
+        #outer {
+            height: 500px;
+            width: 90%;
+            background-color: aquamarine;
+            margin: 100px auto;
+        }
+
+        #inner {
+            height: 300px;
+            width: 94%;
+            background-color: antiquewhite;
+            margin: 100px auto 0;
+            display: flex;
+           
+        }
+
+        #inner div {
+            height: 120px;
+            width: 220px;
+            border: 2px solid black;
+            background-color: aliceblue;
+            margin: 100px auto 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+        h1{
+            margin: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="outer">
+        <h1>Outer</h1>
+         <div id="inner">
+            <h1 id="child_head">Inner</h1>
+            <div>A</div>
+            <div>B</div>
+            <div id="child_c">C</div><!--<div>D</div>-->
+            <div id="child_E">E</div>
+        </div>
+    </div>
+</body>
+</html>
+    <script>
+                                                                     // parentElement
+
+        // var a = document.getElementById("inner").parentElement;
+        // var a = document.getElementById("outer").parentElement;
+        // var a = document.body.parentElement;
+        // var a = document.getElementById("child_c").parentElement;
+        // var a = document.getElementById("main").parentElement;
+        // document.getElementById("inner").parentElement.style.backgroundColor = "red";
+        // document.getElementById("outer").parentElement.style.backgroundColor = "red";
+     /*   document.getElementById("child_c").parentElement.style.backgroundColor = "red";
+        var a = document.getElementById("main").parentElement;  */
+                                                                                    // parentNode
+
+        // var a = document.getElementById("main").parentNode;                                                                           
+        // document.getElementById("inner").parentNode.style.backgroundColor = "red";
+        // document.getElementById("outer").parentNode.style.backgroundColor = "red";
+    /*   document.getElementById("child_c").parentNode.style.backgroundColor = "red";
+        // var a = document.getElementById("inner").parentNode;  
+        var a = document.getElementById("child_c").parentNode;  */
+                                                                                    // children
+
+     /*  // document.getElementById("inner").children[0].style.backgroundColor = "red";
+        document.getElementById("inner").children[3].style.backgroundColor = "red";
+        // var a = document.getElementById("main").children;
+        // var a = document.getElementById("outer").children;
+        // var a = document.getElementById("outer").children[0].innerHTML;
+        // var a = document.getElementById("outer").children[1];
+        // var a = document.getElementById("inner").children;
+        // var a = document.getElementById("inner").children[0].innerHTML;
+        var a = document.getElementById("inner").children[3];  */
+
+                                                                                //childNodes
+
+  /*  //   document.getElementById("inner").childNodes[1].style.backgroundColor = "red";
+        document.getElementById("inner").childNodes[5].style.backgroundColor = "red";
+        // var a = document.getElementById("outer").childNodes;
+        // var a = document.getElementById("outer").childNodes[0];
+        // var a = document.getElementById("outer").childNodes[1].innerHTML;
+        // var a = document.getElementById("inner").childNodes;
+        // var a = document.getElementById("inner").childNodes[1];
+        var a = document.getElementById("inner").childNodes[7];  */
+
+                                                                                // firstElementChild
+                                                                
+        // var a = document.getElementById("inner").firstElementChild;    
+        // var a = document.getElementById("outer").firstElementChild;    
+        // document.getElementById("outer").firstElementChild.style.backgroundColor = "red";                                                              
+      /* document.getElementById("inner").firstElementChild.style.backgroundColor = "red";                                                              
+        var a = document.getElementById("inner").firstElementChild.innerHTML;      */ 
+        
+                                                                                    //lastElementChild
+
+      /*  document.getElementById("inner").lastElementChild.style.backgroundColor = "red";                                                              
+        // var a = document.getElementById("inner").lastElementChild.innerHTML;                                                                           
+        var a = document.getElementById("inner").lastElementChild;     */   
+
+      /*  document.getElementById("outer").lastElementChild.style.backgroundColor = "red";                                                              
+            var a = document.getElementById("outer").lastElementChild;     */  
+        
+                                                                                    //firstChild and lastChild
+                                                                                    
+  /*  //   document.getElementById("outer").firstChild.style.backgroundColor = "red";                                                              
+        var a = document.getElementById("outer").firstChild;    */
+
+    /*    document.getElementById("inner").firstChild.style.backgroundColor = "red";                                                              
+             var a = document.getElementById("inner").firstChild;    */
+        
+      /*    document.getElementById("inner").lastChild.style.backgroundColor = "red";                                                              
+            var a = document.getElementById("inner").lastChild; */
+
+        /*    document.getElementById("outer").lastChild.style.backgroundColor = "red";                                                              
+              var a = document.getElementById("outer").lastChild;  */
+
+            //   var a = document.getElementById("child_c").lastChild; 
+            //   var a = document.getElementById("child_c").firstChild; 
+
+                                                                                        //nextElementSibling and previousElementSibling
+
+         /*   document.getElementById("child_c").nextElementSibling.style.backgroundColor = "red";                                                              
+              var a = document.getElementById("child_c").nextElementSibling;  */
+            //   var a = document.getElementById("child_E").nextSibling;
+            //   var a = document.getElementById("child_head").nextElementSibling;
+
+         /*     document.getElementById("child_c").previousElementSibling.style.backgroundColor = "red";                                                              
+              var a = document.getElementById("child_c").previousElementSibling;  */
+            //   var a = document.getElementById("child_E").previousElementSibling;  
+            //   var a = document.getElementById("child_head").previousElementSibling;  
+
+                                                                                            //previousSibling and nextSibling
+
+            // var a = document.getElementById("child_head").previousSibling;              
+            // var a = document.getElementById("child_head").nextSibling;              
+            // var a = document.getElementById("child_E").nextSibling;              
+            // var a = document.getElementById("child_c").previousSibling;              
+            var a = document.getElementById("child_c").nextSibling;              
+            console.log(a);
+    </script>
+</body>
+
+</html>

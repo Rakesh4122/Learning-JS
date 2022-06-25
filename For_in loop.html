@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For_ in loop</title>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <script>
+         var obj = {
+             firstname : "Rakesh",
+             lastname : "Singh",
+             age : 24,
+             email : "rakesh4122@gmail.com"
+          };
+     
+          for(var key in obj){
+            //   document.write(obj[key] + "<br>");
+              document.write(key +" : "+ obj[key] + "<br>");
+          }   
+
+        /*    const person = {
+                fname : "Nitesh",
+                lname : "Singh",
+                age : 25,
+                email : "snitesh4122@gmail.com",
+                address : "Kavirampur Babatpur Varanasi",
+                Country : "INDIA"
+            };
+            let x= " ";
+            for( let i in person){
+                // document.write(person[i], "<br>");
+                // document.write(i +" : " +person[i],"<br>");
+                    x= x+ i+ ":"+ person[i] + "<br>";
+                    document.getElementById("demo").innerHTML = x;
+                }   */
+
+        //  For in loop over  array values
+
+     /*  const numbers = [12, 45, 10, 67, 6, 16];
+        let x = " ";
+        for (var i in numbers) {
+            x = x + numbers[i] + "<br>";
+            document.getElementById("demo").innerHTML = x;
+            // document.write(numbers[i],"<br>");
+        } */
+
+    </script>
+</body>
+
+</html>

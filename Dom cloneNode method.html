@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom cloneNode method</title>
+    <style>
+         #test{
+            height: 350px;
+            width: 800px;
+            background-color: rgb(201, 172, 134);
+            border: 2px solid black;
+        
+        }
+    </style>
+</head>
+<body>
+    <ul id="list1">
+        <li class="abc">Orange</li>
+        <li>Mango</li>
+        <li>Apple</li>
+        <li>Banana</li>
+    </ul>
+
+    <!-- <ul id="list2">
+        <li>carrot</li>
+        <li>Tomato</li>
+    </ul> -->
+    
+    <div id="test"></div>
+    <script>
+        var target = document.getElementById("list1").children[0];
+        // var target = document.getElementById("list1").children[1];
+        // var target = document.getElementById("list1").children[3];
+
+        // var copyElement = target.cloneNode(false);
+        var copyElement = target.cloneNode(true);
+        console.log(copyElement);
+        document.getElementById("test").appendChild(copyElement);
+    </script>
+</body>
+</html>

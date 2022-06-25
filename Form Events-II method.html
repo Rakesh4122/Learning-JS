@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Events-II</title>
+</head>
+<body>
+    <form action="" onsubmit="submitFunction()">
+        Name: <input type="email" id="fname" onchange="changeFunction(this)" onselect="selectFunction()" oninvalid="alert('please enter the correct email id.')"><br><br>
+        Class: <input type="text" id=""><br><br>
+        Country :
+        <select id="" onchange="changeFunction(this)">
+            <option value="">Select Country Name</option>
+            <option value="India">India</option>
+            <option value="Chine">Chine</option>
+            <option value="Nepal">Nepal</option>
+            <option value="Shri Lanka">Shri Lanka</option>
+            <option value="Bangladesh">Bangladesh</option>
+        </select>
+        <input type="submit">
+        <br><br>
+        
+                
+         </form>
+     
+         <div id="test" style="border:1px solid blue; margin-top: 20px;"></div>
+
+         <script>
+                                                                  //input
+             function inputFunction(element){
+                 var x= element.value;
+                 document.getElementById("test").innerHTML = x;
+             }
+                                                                //change
+             function changeFunction(element){
+                 var x= element.value;
+                 document.getElementById("test").innerHTML = x;
+             }
+                                                                //select
+             function selectFunction(){
+                    console.log("You are some text.");
+             }
+                                                                //submit
+             function submitFunction(){
+                //  console.log("You submitted a form.");
+            //    alert("You submitted a form.");
+            var x = document.getElementById("fname").value;
+               alert("Hello" + x);
+             }
+         </script>
+</body>
+</html>

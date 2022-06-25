@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For_Each loop</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        // var a = ["Rakesh","Aman","Vinay","Nitesh"];
+        
+        /*   a.forEach(function(value){
+            document.write(value, "<br>");
+        }); */
+
+     /*   a.forEach(function(value,index){
+            document.write(index + ":"+ value, "<br>");
+        }); */ 
+        
+
+        // Inside the function
+
+     /*   var a = ["Rakesh","Aman","Vinay","Nitesh"];
+        a.forEach(loop);
+
+        function loop(value,index){
+            document.write(index + " : " + value , "<br>");
+        }   */
+
+        const numbers = [4,10,18,45,6,78];
+
+        var x= " ";
+        numbers.forEach(myFunction);
+          function myFunction(value,index){
+                x= x + index+ " : "+ value+ "<br>";
+            }  
+            document.getElementById("demo").innerHTML= x;
+
+        
+    </script>
+</body>
+</html>

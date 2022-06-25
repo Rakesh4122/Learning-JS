@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom replaceChild() & removeChild() method</title>
+</head>
+<body>
+    <ul id="list">
+        <li>Orange</li>
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Banana</li>
+    </ul>
+
+    <script>
+                                                                //replaceChild()
+      /*  var newElement = document.createElement("li");
+
+        var newText = document.createTextNode("Wow new text");
+
+        newElement.appendChild(newText)
+
+         var target = document.getElementById("list");
+
+        //  var oldElement = target.children[0];
+        //  var oldElement = target.children[1];
+            var oldElement = target.children[3];
+
+         console.log(oldElement);
+
+         target.replaceChild(newElement,oldElement); */
+         
+                                                            //removeChild()
+
+         var target = document.getElementById("list");
+        // var oldElement = target.children[0];
+        // var oldElement = target.children[2];
+        var oldElement = target.children[1];
+        
+        console.log(oldElement);
+        target.removeChild(oldElement);
+    </script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dom css styling methods</title>
+	<style>
+		#header{
+			border: 2px solid black;
+			height: 90px;
+			width: 100%;
+		}
+
+		.abc {
+			background-color: hotpink;
+		}
+		.xyz {
+			background-color: rgb(176, 207, 176);
+		}
+
+	
+
+		table,
+		th,
+		td {
+			border: 2px solid black;
+			height: 100px;
+			width: 100.2%;
+			background-color: blue;
+			border-collapse: collapse;
+			padding: 40px;
+			padding-right: 250px;
+			font-weight: bold;
+			font-size: 20px;
+			text-align: center;
+			color: white;
+		}
+
+		.wd {
+			border: 2px solid black;
+			background-color: red;
+			height: 100px;
+			width: 100%;
+			text-align: center;
+			font-weight: bold;
+			font-size: 70px;
+			padding-top: 20px;
+			color: white;
+		}
+
+		.raj {
+			border: 2px solid black;
+			background-color: seagreen;
+			height: 100px;
+			width: 100%;
+			font-weight: bold;
+			font-size: 40px;
+			padding-top: 40px;
+		}
+
+		a {
+			border: 2px solid white;
+			background-color: yellow;
+			margin-left: 20px;
+			margin-right: 20px;
+			padding: 6pxpx;
+		}
+
+		p{
+			border: 2px solid black;
+			background-color: grey;
+			height: 100px;
+			width: 100%;
+			text-align: center;
+			font-weight: bold;
+			font-size: 60px;
+			padding-top: 20px;
+			color: white;
+			margin: 0px;
+		}
+
+	</style>
+</head>
+
+<body>
+		<div id="header" class="abc xyz efg" style="border: 5px solid red;">
+			<h1>My Third Website</h1>
+		</div>
+	<table id="demo" class="lists">
+		<tr>
+			<th>About</th>
+			<th>Moral</th>
+			<th>Education</th>
+		</tr>
+		<td>I am a student. I am Graduate Boy.</td>
+		<td>Life is about to die.We believe... We can... </td>
+		<td>
+			<ul class="list">
+				<li>B.Sc</li>
+				<li>12<sup>th</sup></li>
+				<li>10<sup>th</sup></li>
+				<li>5<sup>th</sup></li>
+				<li>4<sup>th</sup></li>
+				<li>2<sup>nd</sup></li>
+				<li>1<sup>st</sup></li>
+			</ul>
+		</td>
+		</tr>
+	</table>
+	<p class="wd">My Website</p>
+	<footer class="raj">
+		<a href="Image Insert.html">Khulikitab.Com</a>
+		<a href="Audio.html" style="float: right;">Khulikitab.Com Audio</a>		
+	</footer>
+	<p id="demo">Thanks For Visit.</p>     
+	<p class="list">Thanks For Visit.</p>
+
+	<script>
+
+																							// style
+
+		var element;
+		// element = document.querySelector("#header").style.border;
+		// element = document.querySelector("#header").style.color;
+		// document.querySelector("#header").style.backgroundColor = "lightgrey";
+		// document.querySelector("#header").style.color = "aqua";
+
+																							// className
+		
+		// document.querySelector("#header").className = "abc"
+		// document.querySelector("#header").className = "abc xyz";
+		// element = document.querySelector("#header").className;
+		
+																							// classList
+		
+		// document.querySelector("#header").classList.add("xyz");
+		// document.querySelector("#header").classList.add("xyz","pqr");
+
+		// document.querySelector("#header").classList.remove("xyz");
+		document.querySelector("#header").classList.remove("xyz","abc");
+		
+		element = document.querySelector("#header").classList;
+		console.log(element);
+	</script>
+</body>
+
+</html> 
